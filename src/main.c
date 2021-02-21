@@ -77,26 +77,19 @@ static struct bt_conn_cb conn_callbacks = {
 	.disconnected     = disconnected,
 };
 //PWM set
-void pwm_set(){
+void pwm_set(uint32_t val){
         int ret;
-        ret = pwm_pin_set_usec(pwm, PWM_CHANNEL, PERIOD_USEC, PERIOD_USEC/2, PWM_FLAGS);
+        int dutyCycle = (PERIOD_USEC * val) / 100;
+        ret = pwm_pin_set_usec(pwm, PWM_CHANNEL, PERIOD_USEC, dutyCycle, PWM_FLAGS);
 }
 
 //Calling the callback 
-static void app_led_cb(uint32_t ledState){
-    bool ledBool;
-    if(ledState == 1){
-        ledBool = true;
-        pwm_set();
-    }
-    else{
-        ledBool = false;
-    }
-    dk_set_led(USER_LED, ledBool);
+static void app_pwm_cb(uint32_t BT_data){
+    pwm_set(BT_data);
 }
 
-static struct bt_ledService_cb service_callbacks = {
-    .led_cb = app_led_cb,
+static struct bt_pwmService_cb service_callbacks = {
+    .pwm_cb = app_pwm_cb,
 };
 
 void main(void)
@@ -110,7 +103,8 @@ void main(void)
         return;
     }
      
-	printk("Starting Bluetooth Peripheral LBS example\n");
+	printk("Starting Bluetooth PWM template\n");
+
         /*PWM INIT*/
         pwm = device_get_binding(PWM_LABEL);
 	if (!pwm) {
@@ -128,13 +122,10 @@ void main(void)
     
     printk("Bluetooth initialized\n");
 
-	//if (IS_ENABLED(CONFIG_SETTINGS)) {
-	//	settings_load();
-	//}
 
-	err = bt_ledService_init(&service_callbacks);
+	err = bt_pwmService_init(&service_callbacks);
 	if (err) {
-		printk("Failed to init LBS (err:%d)\n", err);
+		printk("Failed to init PWM service (err:%d)\n", err);
 		return;
 	}
 

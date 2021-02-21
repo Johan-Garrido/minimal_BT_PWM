@@ -5,11 +5,11 @@
 #define BT_UUID_SERVICE BT_UUID_DECLARE_128 (BT_UUID_SERVICE_VAL)
 
 //UUID Led characteristic declaration
-#define BT_UUID_LED_VAL BT_UUID_128_ENCODE(0x00001527, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
-#define BT_UUID_LED BT_UUID_DECLARE_128 (BT_UUID_LED_VAL)
+#define BT_UUID_PWM_VAL BT_UUID_128_ENCODE(0x00001527, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
+#define BT_UUID_PWM BT_UUID_DECLARE_128 (BT_UUID_PWM_VAL)
 
-//Declaración del Callback. Callback declaration
-typedef void (*led_cb_t) (uint32_t ledState);
-struct bt_ledService_cb{led_cb_t led_cb;};
+//Callback declaration
+typedef void (*pwm_cb_t) (uint32_t ledState);
+struct bt_pwmService_cb{pwm_cb_t pwm_cb;};
 
-int bt_ledService_init (struct bt_ledService_cb *callbacks);
+int bt_pwmService_init (struct bt_pwmService_cb *callbacks);
