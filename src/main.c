@@ -84,8 +84,13 @@ void pwm_set(uint32_t val){
 }
 
 //Calling the callback 
-static void app_pwm_cb(uint32_t BT_data){
-    pwm_set(BT_data);
+static void app_pwm_cb(uint32_t data_BT){
+    if(data_BT >= 0 && data_BT <= 100){
+        pwm_set(data_BT);
+    }
+    else{
+      printk("Invalid duty cycle number.")
+    }
 }
 
 static struct bt_pwmService_cb service_callbacks = {

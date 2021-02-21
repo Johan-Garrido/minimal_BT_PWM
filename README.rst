@@ -6,6 +6,5 @@ Minimal footprint
 Overview
 ********
 
-This sample provides a static PWM Bluetooth application for the moment.
-
+This template provides a controllable duty cycle PWM through a Bluetooth application.
 
