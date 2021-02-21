@@ -1,0 +1,22 @@
+zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/stdout_console.c.obj: \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/source/stdout/stdout_console.c \
+ /home/johangarrido/samples/basic/minimal_BT_PWM/build_nrf52dk_nrf52832/zephyr/include/generated/autoconf.h \
+ /home/johangarrido/ncs/zephyr/include/toolchain/zephyr_stdint.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdio.h \
+ /home/johangarrido/ncs/zephyr/include/toolchain.h \
+ /home/johangarrido/ncs/zephyr/include/toolchain/gcc.h \
+ /home/johangarrido/ncs/zephyr/include/toolchain/common.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdbool.h \
+ /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/bits/restrict.h \
+ /opt/gnuarmemb/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /home/johangarrido/ncs/zephyr/include/sys/libc-hooks.h \
+ zephyr/include/generated/syscalls/libc-hooks.h \
+ zephyr/include/generated/syscall_list.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdint.h \
+ /home/johangarrido/ncs/zephyr/include/syscall.h \
+ /home/johangarrido/ncs/zephyr/include/arch/syscall.h \
+ /home/johangarrido/ncs/zephyr/include/arch/arm/aarch32/syscall.h \
+ /home/johangarrido/ncs/zephyr/include/zephyr/types.h \
+ /home/johangarrido/ncs/zephyr/include/syscall_handler.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/string.h

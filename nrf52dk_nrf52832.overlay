@@ -1,0 +1,28 @@
+/ {	
+	pwmleds {
+		compatible = "pwm-leds";
+		pwm_led0: pwm_led_0 {
+			pwms = < &pwm0 0x14 >;
+		};
+		pwm_led1: pwm_led_1 {
+			pwms = < &pwm0 0x17 >;
+		};
+		pwm_led2: pwm_led_2 {
+			pwms = < &pwm0 0x18 >;
+		};
+	};
+	soc {
+		pwm0: pwm@4001c000 {
+			ch0-pin = < 0x14 >;
+			ch0-inverted;
+			ch1-pin = < 0x17 >;
+			ch1-inverted;
+			ch2-pin = < 0x18 >;
+			ch2-inverted;
+		};
+	};
+	aliases {
+		pwm-led1 = &pwm_led1;
+		pwm-led2 = &pwm_led2;
+	};
+};	

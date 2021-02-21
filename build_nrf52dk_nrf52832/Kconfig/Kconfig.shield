@@ -1,0 +1,2 @@
+osource "/home/johangarrido/ncs/nrf/boards/shields/*/Kconfig.shield"
+osource "/home/johangarrido/ncs/zephyr/boards/shields/*/Kconfig.shield"

@@ -1,0 +1,6 @@
+osource "/home/johangarrido/ncs/nrf/Kconfig.nrf"
+
+osource "/home/johangarrido/ncs/bootloader/mcuboot/zephyr/Kconfig"
+
+osource "/home/johangarrido/ncs/nrfxlib/Kconfig.nrfxlib"
+

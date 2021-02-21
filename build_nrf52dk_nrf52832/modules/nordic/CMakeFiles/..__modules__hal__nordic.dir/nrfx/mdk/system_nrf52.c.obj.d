@@ -1,0 +1,25 @@
+modules/nordic/CMakeFiles/..__modules__hal__nordic.dir/nrfx/mdk/system_nrf52.c.obj: \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/system_nrf52.c \
+ /home/johangarrido/samples/basic/minimal_BT_PWM/build_nrf52dk_nrf52832/zephyr/include/generated/autoconf.h \
+ /home/johangarrido/ncs/zephyr/include/toolchain/zephyr_stdint.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdint.h \
+ /home/johangarrido/ncs/zephyr/lib/libc/minimal/include/stdbool.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf52.h \
+ /home/johangarrido/ncs/modules/hal/cmsis/CMSIS/Core/Include/core_cm4.h \
+ /home/johangarrido/ncs/modules/hal/cmsis/CMSIS/Core/Include/cmsis_version.h \
+ /home/johangarrido/ncs/modules/hal/cmsis/CMSIS/Core/Include/cmsis_compiler.h \
+ /home/johangarrido/ncs/modules/hal/cmsis/CMSIS/Core/Include/cmsis_gcc.h \
+ /home/johangarrido/ncs/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv7.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/system_nrf52.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf52_bitfields.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf51_to_nrf52.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf52_name_change.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/compiler_abstraction.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf_peripherals.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf52832_peripherals.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf_erratas.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf51_erratas.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf52_erratas.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf53_erratas.h \
+ /home/johangarrido/ncs/modules/hal/nordic/nrfx/mdk/nrf91_erratas.h
